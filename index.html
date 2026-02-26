@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ST DOMINIC SECONDARY SCHOOL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <h1>ST DOMINIC SECONDARY SCHOOL</h1>
+      <a href="#register" class="btn">Jisajili</a>
+    </nav>
+
+    <section class="hero-content">
+      <p class="tag">Elimu Bora • Nidhamu • Maadili</p>
+      <h2>Karibu kwenye ST DOMINIC SECONDARY SCHOOL</h2>
+      <p>
+        Tunasajili wanafunzi wapya kwa mwaka mpya wa masomo.
+        Jaza fomu hapa chini ili kutuma maombi ya usajili.
+      </p>
+      <a href="#register" class="btn btn-light">Anza Usajili</a>
+    </section>
+  </header>
+
+  <main>
+    <section class="info">
+      <article class="card">
+        <h3>Masomo ya Kisasa</h3>
+        <p>Tunatoa mtaala unaolenga ufaulu wa kitaaluma na ujuzi wa maisha.</p>
+      </article>
+      <article class="card">
+        <h3>Walimu Wenye Uzoefu</h3>
+        <p>Wanafunzi hufundishwa na walimu waliobobea katika kila somo.</p>
+      </article>
+      <article class="card">
+        <h3>Mazingira Salama</h3>
+        <p>Shule ina mazingira bora ya kujifunzia, michezo, na malezi.</p>
+      </article>
+    </section>
+
+    <section id="register" class="register">
+      <h2>Fomu ya Usajili wa Mwanafunzi</h2>
+      <form id="registrationForm" novalidate>
+        <div class="input-group">
+          <label for="fullName">Jina kamili</label>
+          <input type="text" id="fullName" name="fullName" placeholder="Mfano: Amina Salim" required>
+        </div>
+
+        <div class="input-group">
+          <label for="email">Barua pepe</label>
+          <input type="email" id="email" name="email" placeholder="Mfano: amina@email.com" required>
+        </div>
+
+        <div class="input-group">
+          <label for="phone">Namba ya simu</label>
+          <input type="tel" id="phone" name="phone" placeholder="Mfano: 07XXXXXXXX" required>
+        </div>
+
+        <div class="input-group">
+          <label for="classLevel">Darasa unaloomba</label>
+          <select id="classLevel" name="classLevel" required>
+            <option value="">Chagua darasa</option>
+            <option value="Form One">Form One</option>
+            <option value="Form Two">Form Two</option>
+            <option value="Form Three">Form Three</option>
+            <option value="Form Four">Form Four</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="message">Ujumbe mfupi</label>
+          <textarea id="message" name="message" rows="4" placeholder="Andika chochote muhimu kuhusu mwanafunzi"></textarea>
+        </div>
+
+        <button type="submit" class="btn">Tuma Usajili</button>
+        <p id="formMessage" class="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ST DOMINIC SECONDARY SCHOOL. Haki zote zimehifadhiwa.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
